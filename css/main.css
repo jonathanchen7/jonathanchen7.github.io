@@ -1,0 +1,262 @@
+/* ---------------------------- GENERAL --------------------------------- */
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ---------------------------- NAVBAR --------------------------------- */
+
+.navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar a {
+    color: white;
+}
+
+.navbar-nav > li {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.nav-color {
+    /* background-color: #183bac !important; */
+    /* background-color: rgba(24, 62, 183, .98) !important;  */
+    background-color: rgba(24, 59, 172, .90) !important; 
+}
+
+/* ---------------------------- HOME --------------------------------- */
+
+#main {
+    background: url("../images/background.png"); 
+    background-size: 100%;
+    box-shadow: inset 0 0 0 1000px rgba(24, 62, 183, .93);
+    height: 100%;
+    color: white;
+}
+
+.icons > li {
+    display: inline;
+}
+
+.icon {
+    margin-left: 10%;
+    width: 30px;
+    height: 30px;
+    float: right;
+}
+
+#jumbotron {
+    padding-top: 30vh;
+}
+
+#home-title {
+    font-size: 5vw;
+}
+
+#home-description {
+    color: rgba(255, 255, 0, 1);
+    font-size: 2.5vw;
+    margin-top: -2vh;
+    font-weight: 300;
+}
+
+#explore-button {
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 2px solid white;
+}
+
+#social-icons {
+    margin-top: 20vh;
+}
+
+
+/* ---------------------------- ABOUT ME --------------------------------- */
+
+#about {
+    padding-top: 30vh;
+    height: 100%;
+    background-color: rgba(237, 85, 59, 0.60);
+    background-size: 100%;
+    color: white;
+}
+
+#portrait {
+    border: 4px solid white;
+    border-radius: 350px;
+    width: 25vw;
+}
+
+#about-text {
+    padding: 20 20 20 20;
+    text-align: justify;
+    font-size: 18px;
+}
+
+#about h1 {
+    font-size: 5vw;
+    margin-bottom: -10px;
+}
+
+/* ---------------------------- PROJECTS --------------------------------- */
+
+#projects {
+    height: 170vh;
+}
+
+#projects-text {
+    margin-top: 12vh;
+    font-size: 4vw;
+    margin-bottom: 5vh;
+    color: rgba(24, 62, 183);
+}
+
+.project {
+    margin-bottom: 20vh;
+    text-align: justify;
+    height: 30%;
+}
+
+.project-name {
+    font-size: 3vw;
+    color: rgba(24, 62, 183, .93);
+}
+
+.project-image {
+    width: 40vw;
+    box-shadow: 5px 5px 10px grey;
+    border-radius: 5px;
+}
+
+.project-tools {
+    width: 30%;
+    padding-left: 3.5%;
+    padding-right: 3.5%; 
+}
+
+.mini-pictures {
+    margin-top: 25px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.project-button {
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 2px solid white;
+    color: #183bac;
+    font-weight: 700;
+    border: 2px solid #183bac;
+}
+
+.source-button {
+    float: right;
+}
+
+/* ---------------------------- SKILLS --------------------------------- */
+
+#skills {
+    background-color: rgb(0, 0, 0);
+    height: 100%;
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+#skills-background {
+    position: absolute;
+    z-index: 0;
+    display: block;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#skills-text {
+    font-size: 70vh;
+    padding-top: 10%;
+    padding-left: 5%;
+    color: rgb(255, 255, 255, .1);
+    font-weight: 800;
+}
+
+#skills-titles {
+    padding-top: 15%;
+    color: rgb(255, 255, 255, .5);
+}
+
+.skills-details {
+    text-align: left;
+    font-size: 1.5vw;
+    background-color: rgba(24, 62, 183, .3);
+    padding: 10px 15px 10px 15px;
+    
+}
+
+/* ---------------------------- RESUME --------------------------------- */
+
+#resume {
+    background-color: rgba(24, 59, 172, 1);
+    height: 100%;
+    color: white;
+    text-align: center;
+}
+
+#resume-title {
+    font-size: 6vw;
+    margin-top: 15%;
+}
+
+#resume-description {
+    margin-top: -1%;
+}
+
+.resume-button {
+    margin-top: 5%;
+    width: 50%;
+}
+
+/* ---------------------------- RESUME VIEW --------------------------------- */
+
+#resume-view {
+    align-content: center;
+}
+
+#resume-picture {
+    height: 100%;
+    box-shadow: 5px 5px 7px grey;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ---------------------------- ANIMATIONS --------------------------------- */
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    max-width: 100px;
+    height: 2px;
+    bottom: 5px;
+    left: 0;
+    background-color: rgba(255, 255, 0, 1);
+    transform: scaleX(0);
+    transition: all .3s ease-in-out 0s;
+    opacity: 0;
+}
+
+.nav-link:hover:before {
+    opacity: 1;
+    left: 0;
+    transform: scaleX(1);
+}
