@@ -1,0 +1,224 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>jonathan chen</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel='icon' href="images/favicon.png" type="image/x-icon" />
+    <script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="main">
+        <div class="container-fluid">
+            <header>
+                <nav class="navbar navbar-expand-lg fixed-top nav-color">
+                    <a class="navbar-brand" href="#">
+                        <img src="./images/logo.png" width="30" height="30" alt="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">about</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#projects">projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#skills">skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#resume">resume</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" href="#">contact</a>
+                            </li> -->
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+
+            <div class="row" id="jumbotron">
+                <div class="col-md-2"></div>
+                <div class="col-md-9">
+                    <h1 id="home-title">jonathan chen</h1>
+                    <h3 id="home-description">student software engineer based in Seattle, WA.</h3>
+                    <button type="button" id="explore-button" class="btn btn-outline-light">explore!</button>
+                </div>
+                <div class="col-md-1"></div>
+
+            </div>
+
+            <div class="row" id="social-icons">
+                <div class="col-md-8"></div>
+                <div class="col-md-4">
+                    <ul class="icons">
+                        <li>
+                            <a href="mailto:name@email.com">
+                                <img class="icon" src="./images/email.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/jonathanchen7">
+                                <img class="icon" src="./images/github.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://linkedin.com/in/jonathanchen7">
+                                <img class="icon" src="./images/linkedin.png">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container-fluid">
+            <div class="row">
+                <div class='col-md-1'></div>
+                <div class='col-md-4'>
+                    <img id="portrait" src="./images/me.png">
+                </div>
+                <div class='col-md-6'>
+                    <div id="about-text">
+                        <h1>about me</h1>
+                        <p>Welcome! I'm a Seattle native studying computer science at the University of Washington,
+                            currently seeking software development positions for Summer 2019. Outside of software
+                            development, I enjoy photography, the outdoors, and every type of food imaginable. Thanks
+                            for
+                            taking the time to visit my site, I hope you learn something new!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="projects">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class='col-md-4'>
+                    <h1 id="projects-text">recent projects</h1>
+                </div>
+                <div class="col-md-7"></div>
+            </div>
+            <div class="row project">
+                <div class="col-md-1"></div>
+                <div class='col-md-6'>
+                    <img class="project-image" src="./images/raft.gif">
+                </div>
+                <div class="col-md-4">
+                    <h2 class="project-name">raft</h2>
+                    <p>RAFT, or Randomly Assign/Find a Table, is a random restaurant generator I created using the
+                        Python Django web framework. RAFT uses the Yelp Fusion API and the Google Places API for
+                        restaurant
+                        and location data. I am currently working towards hosting this project so everyone can access
+                        it! </p>
+                    <div class="mini-pictures">
+                        <img class="project-tools" src="./images/django.png" alt="django-logo">
+                        <img class="project-tools" src="./images/python.png" alt="python-logo">
+                        <img class="project-tools" src="./images/yelp-fusion.png" alt="yelp-logo">
+                    </div>
+                    <div>
+                        <button type="button" class="btn project-button" disabled>No Live View :(</button>
+                        <a href="https://github.com/jonathanchen7/raft/" target="_blank"><button type="button"
+                                class="btn btn-outline-warning project-button source-button">&lt/&gt View
+                                Source</button></a>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+
+            <div class="row project">
+                <div class="col-md-1"></div>
+                <div class="col-md-4">
+                    <h2 class="project-name">coming soon...</h2>
+                    <p>I'm currently working on two additional projects that will be revealed soon! Hint: they involve
+                        sorting and web scraping!</p>
+                </div>
+                <div class="col-md-1"></div>
+                <div class='col-md-6'>
+                    <img class="project-image" src="./images/coming-soon.gif">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="skills">
+        <div id="skills-background">
+            <h1 id="skills-text">SKILLS.</h1>
+        </div>
+        <div class="container-fluid">
+
+            <div class="row" id="skills-titles">
+                <div class="col-md-2"></div>
+                <div class="col-md-2">
+                    <h2>languages</h2>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-2">
+                    <h2>frameworks</h2>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-2">
+                    <h2>technologies</h2>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-2">
+                    <p class="skills-details">java<br>python<br>javascript<br>html<br>css</p>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-2">
+                    <p class="skills-details">django<br>react<p>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-2">
+                    <p class="skills-details">node.js<br>linux<br>git<br>visual studio<br>active directory<br></p>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="resume">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 id="resume-title">resume</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p id="resume-description">tl;dr - i'm a junior at uw seattle studying CS with 3 years of experience
+                        in the tech industry.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-3"><a href="./resume.html" target="_blank"><button type="button"
+                            class="btn btn-outline-warning resume-button">view</button></a></div>
+                <div class="col-md-3"><a href="./files/Jonathan-Chen-Resume.docx" target="_blank"><button type="button"
+                            class="btn btn-outline-warning resume-button">download</button></a></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

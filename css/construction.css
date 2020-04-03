@@ -1,0 +1,34 @@
+html {
+    font-family: Roboto;
+}
+
+header img {
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+#main {
+    margin-top: 30vh;
+    text-align: center;
+}
+
+#content {
+    text-align: left;
+    display: inline-block;
+    font-size: 3vw;
+    font-weight: 200;
+}
+
+p {
+    text-align: left;
+    margin: 0;
+}
+
+#logo {
+    width: 30px;
+}
+
+#signature {
+    width: 10vw;
+    margin-top: 10px;
+}
