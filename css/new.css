@@ -1,0 +1,138 @@
+/* --------------------------- COLORS ----------------------------- */
+/* --------------------------- MIXIMS ----------------------------- */
+/* --------------------------- GENERAL ----------------------------- */
+* {
+  font-family: 'Roboto', sans-serif;
+  color: #FFFFFF;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.color-white a {
+  color: white;
+}
+
+.color-black a {
+  color: black;
+}
+
+/* --------------------------- NAVBAR ----------------------------- */
+nav h2 {
+  padding-left: 10px;
+  color: #D76556;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+nav a:hover {
+  color: #D76556;
+}
+
+nav .nav-item {
+  padding: 0px 15px 0px 15px;
+}
+
+/* --------------------------- HOME ----------------------------- */
+#home-page {
+  height: 100%;
+  background-color: #2D394E;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#home-page h1 {
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 90px;
+  color: #81A5C5;
+}
+
+#home-page h3 {
+  font-weight: lighter;
+  font-size: 30;
+  color: #EAEEF2;
+}
+
+/* --------------------------- ABOUT ME ----------------------------- */
+#about-me {
+  height: 100%;
+  background-color: #3E6786;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#about-me img {
+  width: 25vw;
+  -webkit-filter: drop-shadow(10px 10px 4px #2D394E);
+          filter: drop-shadow(10px 10px 4px #2D394E);
+}
+
+/* --------------------------- PROJECTS ----------------------------- */
+#projects {
+  height: 100%;
+  background-color: grey;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#projects h1 {
+  color: black;
+}
+
+#projects .carousel {
+  height: 50%;
+}
+
+/* --------------------------- RESUME ----------------------------- */
+#resume {
+  height: 100%;
+  background-color: #2D394E;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#resume p {
+  color: #D76556;
+  font-size: 20px;
+  font-weight: thin;
+}
+
+#resume embed {
+  border-radius: 15px;
+  width: 80%;
+  height: 70%;
+}
+
+#resume-text {
+  padding-top: 80px;
+  padding-left: 80px;
+}
+
+/* --------------------------- CONTACT ----------------------------- */
+#contact {
+  height: 100%;
+  background-color: #2D394E;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+}
+/*# sourceMappingURL=new.css.map */
