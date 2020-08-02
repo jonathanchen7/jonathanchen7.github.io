@@ -3,7 +3,11 @@
 /* --------------------------- GENERAL ----------------------------- */
 * {
   font-family: 'Roboto', sans-serif;
-  color: #FFFFFF;
+}
+
+*:focus {
+  outline: 0;
+  outline: none;
 }
 
 html {
@@ -68,6 +72,7 @@ nav .nav-item {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: white;
 }
 
 #about-me img {
@@ -79,10 +84,11 @@ nav .nav-item {
 /* --------------------------- PROJECTS ----------------------------- */
 #projects {
   height: 100%;
-  background-color: grey;
+  background-color: #EAEEF2;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* --------------------------- SLICK CAROUSEL ----------------------------- */
 }
 
 #projects h1 {
@@ -90,7 +96,101 @@ nav .nav-item {
 }
 
 #projects .carousel {
-  height: 50%;
+  margin-top: 10px;
+  height: 60%;
+}
+
+#projects .carousel-box {
+  position: relative;
+  padding: 20px 0 20px 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#projects .carousel-box:hover .carousel-item {
+  -webkit-filter: blur(0px) brightness(100%);
+          filter: blur(0px) brightness(100%);
+}
+
+#projects .carousel-box:hover .carousel-header {
+  background-color: #81A5C5;
+}
+
+#projects .carousel-box:hover .carousel-subheader {
+  background-color: #D76556;
+}
+
+#projects .carousel-box:hover {
+  border-radius: 10;
+  -webkit-filter: drop-shadow(5px 7px 3px rgba(0, 0, 0, 0.3));
+          filter: drop-shadow(5px 7px 3px rgba(0, 0, 0, 0.3));
+}
+
+#projects .carousel-item {
+  cursor: pointer;
+  padding: 0 10px 0 10px;
+  border-radius: 27px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-filter: blur(1.5px) brightness(80%);
+          filter: blur(1.5px) brightness(80%);
+}
+
+#projects .carousel-text-box {
+  color: white;
+  position: absolute;
+  width: 90%;
+  top: 40px;
+  left: 5%;
+}
+
+#projects .carousel-header {
+  padding: 3px 10px 3px 10px;
+  border-radius: 25px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#projects .carousel-subheader {
+  padding: 3px 10px 3px 10px;
+  border-radius: 20px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#projects .slick-dots li button:before {
+  color: #D76556;
+  font-size: 15px;
+}
+
+#projects .slick-dots li.slick-active button:before {
+  color: #D76556;
+}
+
+#projects .slick-next:before, #projects .slick-prev:before {
+  font-size: 40px;
+  color: #D76556;
+}
+
+#projects .slick-prev {
+  left: -90px;
+}
+
+[dir="rtl"] #projects .slick-prev {
+  left: auto;
+  right: -90px;
+}
+
+#projects .slick-next {
+  right: -70px;
+}
+
+[dir="rtl"] #projects .slick-next {
+  left: -70px;
+  right: auto;
 }
 
 /* --------------------------- RESUME ----------------------------- */
@@ -129,6 +229,11 @@ nav .nav-item {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: white;
+}
+
+#contact a {
+  color: white;
 }
 
 .icon {

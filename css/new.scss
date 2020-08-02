@@ -7,6 +7,14 @@ $blue: #81A5C5;
 $light-blue: #EAEEF2;
 $white: #FFFFFF;
 
+$carousel-brightness: 80%;
+$carousel-blur: 1.5px;
+$carousel-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+
+$carousel-brightness-hover: 100%;
+$carousel-blur-hover: 0px;
+$carousel-shadow-hover: 5px 7px 3px rgba(0, 0, 0, .3);
+
 /* --------------------------- MIXIMS ----------------------------- */
 
 @mixin section($color) {
@@ -19,7 +27,11 @@ $white: #FFFFFF;
 
 * {
     font-family: 'Roboto', sans-serif;
-    color: $white;
+
+    &:focus {
+        outline: 0;
+        outline: none;
+    }
 }
 
 html {
@@ -51,7 +63,7 @@ nav {
         color: white;
         transition: .3s;
 
-        &:hover{
+        &:hover {
             color: $red;
         }
     }
@@ -86,6 +98,7 @@ nav {
 
 #about-me {
     @include section($dark-blue);
+    color: white;
 
     img {
         width: 25vw;
@@ -96,15 +109,110 @@ nav {
 /* --------------------------- PROJECTS ----------------------------- */
 
 #projects {
-    @include section(grey);
+    @include section($light-blue);
 
     h1 {
         color: black;
     }
 
     .carousel {
-        height: 50%;
+        margin-top: 10px;
+        height: 60%;
     }
+
+    .carousel-box {
+        position: relative;
+        padding: 20px 0 20px 0;
+        transition: .5s;
+
+        &:hover .carousel-item {
+            filter: blur($carousel-blur-hover) brightness($carousel-brightness-hover);
+        }
+
+        &:hover .carousel-header {
+
+            background-color: $blue;
+        }
+
+        &:hover .carousel-subheader {
+            background-color: $red;
+        }
+
+        &:hover {
+            border-radius: 10;
+            filter: drop-shadow($carousel-shadow-hover);
+        }
+    }
+
+    .carousel-item {
+        cursor: pointer;
+        padding: 0 10px 0 10px;
+        border-radius: 27px;
+        height: 100%;
+        object-fit: cover;
+        transition: .5s;
+        filter: blur($carousel-blur) brightness($carousel-brightness);
+    }
+
+    .carousel-text-box {
+        color: white;
+        // background-color: red;
+        position: absolute;
+        width: 90%;
+        top: 40px;
+        left: 5%;
+    }
+
+    .carousel-header {
+        padding: 3px 10px 3px 10px;
+        border-radius: 25px;
+        transition: .5s;
+    }
+
+    .carousel-subheader {
+        padding: 3px 10px 3px 10px;
+        border-radius: 20px;
+        transition: .5s;
+    }
+
+/* --------------------------- SLICK CAROUSEL ----------------------------- */
+
+    .slick-dots li {
+        button {
+            &:before {
+                color: $red;
+                font-size: 15px;
+            }
+        }
+
+        &.slick-active button:before {
+            color: $red;
+        }
+    }
+
+    .slick-next, .slick-prev {
+        &:before {
+            font-size: 40px;
+            color: $red;
+        }
+    }
+
+    .slick-prev {
+        left: -90px;
+    [dir="rtl"] & {
+        left: auto;
+        right: -90px;
+    }
+    }
+
+    .slick-next {
+        right: -70px;
+        [dir="rtl"] & {
+            left: -70px;
+            right: auto;
+        }
+    }
+
 }
 
 /* --------------------------- RESUME ----------------------------- */
@@ -136,6 +244,13 @@ nav {
 
 #contact {
     @include section($background-blue);
+
+    color: white;
+
+    a {
+        color: white;
+    }
+
 }
 
 .icon {

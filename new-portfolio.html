@@ -9,8 +9,9 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/new.css">
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" href="css/new.css">
     <link rel='icon' href="images/favicon.png" type="image/x-icon" />
 </head>
 
@@ -60,7 +61,7 @@
             <div class="col-md-5 text-center">
                 <img src="./images/me.png" />
             </div>
-            <div class="col-md-5">
+            <div class="col-md-6">
                 <h1>about me</h1>
                 <br>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -77,13 +78,37 @@
 
     <div class="container-fluid">
         <div id="projects" class="row">
-            <div class="offset-md-2 col-md-8">
+            <div class="offset-md-1 col-md-10">
                 <h1>projects</h1>
                 <div class="carousel">
-                    <div>RAFT</div>
-                    <div>Orion Aerospace</div>
-                    <div>Sorting Visualizer</div>
-                    <div>Chess Bot</div>
+                    <div class="carousel-box">
+                        <img class="carousel-item" src="./images/orion.png">
+                        <div class="carousel-text-box">
+                            <h3><span class="carousel-header">Orion Aerospace GSE GUI</span></h3>
+                            <p><span class="carousel-subheader">Swift, SwiftUI, Python, Django</span></p>
+                        </div>
+                    </div>
+                    <div class="carousel-box">
+                        <img id="testimage" class="carousel-item" src="./images/raft.png">
+                        <div class="carousel-text-box">
+                            <h3><span class="carousel-header">Restaurant Generator App</span></h3>
+                            <p><span class="carousel-subheader">Swift, SwiftUI, Python, Django</span></p>
+                        </div>
+                    </div>
+                    <div class="carousel-box">
+                        <img class="carousel-item" src="./images/sorting.png">
+                        <div class="carousel-text-box">
+                            <h3><span class="carousel-header">Sorting Visualizer</span></h3>
+                            <p><span class="carousel-subheader">Swift, SwiftUI, Python, Django</span></p>
+                        </div>
+                    </div>
+                    <div class="carousel-box">
+                        <img class="carousel-item" src="./images/portfolio.png">
+                        <div class="carousel-text-box">
+                            <h3><span class="carousel-header">Personal Portfolio</span></h3>
+                            <p><span class="carousel-subheader">Swift, SwiftUI, Python, Django</span></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -95,7 +120,7 @@
                 <div class="col-md-12 text-center">
                     <h1>CONTACT ME</h1>
 
-                    <span class="align-left"><img class="icon" src="./images/email.png">
+                    <span class="align-left"><img class="icon" src="./images/github.png">
                         jonathanschen7@gmail.com</span>
                     <p>206.375.8988</p>
                     <a href="https://www.github.com/jonathanchen7">
@@ -107,10 +132,6 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-
-        </div>
-
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
