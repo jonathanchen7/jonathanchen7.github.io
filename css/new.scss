@@ -75,8 +75,12 @@ nav {
 
 /* --------------------------- HOME ----------------------------- */
 
+#home-background {
+    background:url('/images/background.png');
+}
+
 #home-page {
-    @include section($background-blue);
+    @include section(rgba(45, 57, 78, .90));
 
     h1 {
         font-weight: bold;

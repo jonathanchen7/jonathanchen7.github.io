@@ -44,9 +44,13 @@ nav .nav-item {
 }
 
 /* --------------------------- HOME ----------------------------- */
+#home-background {
+  background: url("/images/background.png");
+}
+
 #home-page {
   height: 100%;
-  background-color: #2D394E;
+  background-color: rgba(45, 57, 78, 0.9);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
