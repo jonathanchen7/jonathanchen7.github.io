@@ -79,10 +79,14 @@ nav .nav-item {
   color: white;
 }
 
-#about-me img {
+#about-me #portrait {
   width: 25vw;
-  -webkit-filter: drop-shadow(10px 10px 4px #2D394E);
-          filter: drop-shadow(10px 10px 4px #2D394E);
+  -webkit-filter: drop-shadow(7px 7px 4px #2D394E);
+          filter: drop-shadow(7px 7px 4px #2D394E);
+}
+
+#about-me #signature {
+  width: 7vw;
 }
 
 /* --------------------------- PROJECTS ----------------------------- */

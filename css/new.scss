@@ -104,9 +104,13 @@ nav {
     @include section($dark-blue);
     color: white;
 
-    img {
+    #portrait {
         width: 25vw;
-        filter: drop-shadow(10px 10px 4px $background-blue);
+        filter: drop-shadow(7px 7px 4px $background-blue);
+    }
+
+    #signature {
+        width: 7vw;
     }
 }
 

@@ -29,6 +29,7 @@ $(document).ready(function () {
               breakpoint: 1100,
               settings: {
                 arrows: false,
+                centerMode: false,
                 centerPadding: '40px',
                 slidesToShow: 2
               }
