@@ -35,7 +35,7 @@ $carousel-shadow-hover: 5px 7px 3px rgba(0, 0, 0, .3);
 }
 
 html {
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
 }
 
 .color-white {
@@ -139,13 +139,12 @@ nav {
         }
 
         &:hover {
-            border-radius: 10;
             filter: drop-shadow($carousel-shadow-hover);
         }
     }
 
     .carousel-item {
-        cursor: pointer;
+        
         padding: 0 10px 0 10px;
         border-radius: 27px;
         height: 100%;
@@ -156,7 +155,6 @@ nav {
 
     .carousel-text-box {
         color: white;
-        // background-color: red;
         position: absolute;
         width: 90%;
         top: 40px;
@@ -164,12 +162,14 @@ nav {
     }
 
     .carousel-header {
-        padding: 3px 10px 3px 10px;
+        box-decoration-break: clone;
+        padding: 2px 8px 2px 8px;
         border-radius: 25px;
         transition: .5s;
     }
 
     .carousel-subheader {
+        box-decoration-break: clone;
         padding: 3px 10px 3px 10px;
         border-radius: 20px;
         transition: .5s;
@@ -213,6 +213,26 @@ nav {
         }
     }
 
+}
+
+/* --------------------------- FEATHERLIGHT MODALS ----------------------------- */
+
+.modal-image {
+    width: 100%;
+}
+
+.hide-modal {
+    display: none;
+}
+
+.featherlight-content {
+    border-radius: 5px;
+}
+
+.featherlight .featherlight-close-icon {
+    top: 5px;
+    right: 5px;
+    font-weight: bolder;
 }
 
 /* --------------------------- RESUME ----------------------------- */
