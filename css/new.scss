@@ -274,14 +274,25 @@ nav {
     @include section($background-blue);
 
     color: white;
+    font-weight: normal;
 
     a {
         color: white;
+    
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    .icon {
+        width: 35px;
+        height: 35px;
+        margin-right: 20px;
+    }
+
+    .contact-item {
+        margin-bottom: 10px;
     }
 
 }
 
-.icon {
-    width: 25px;
-    height: 25px;
-}

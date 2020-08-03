@@ -259,14 +259,24 @@ nav .nav-item {
       -ms-flex-align: center;
           align-items: center;
   color: white;
+  font-weight: normal;
 }
 
 #contact a {
   color: white;
 }
 
-.icon {
-  width: 25px;
-  height: 25px;
+#contact a:hover {
+  text-decoration: none;
+}
+
+#contact .icon {
+  width: 35px;
+  height: 35px;
+  margin-right: 20px;
+}
+
+#contact .contact-item {
+  margin-bottom: 10px;
 }
 /*# sourceMappingURL=new.css.map */
