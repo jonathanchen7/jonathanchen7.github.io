@@ -128,11 +128,6 @@ nav .nav-item {
   background-color: #D76556;
 }
 
-#projects .carousel-box:hover {
-  -webkit-filter: drop-shadow(5px 7px 3px rgba(0, 0, 0, 0.3));
-          filter: drop-shadow(5px 7px 3px rgba(0, 0, 0, 0.3));
-}
-
 #projects .carousel-item {
   padding: 0 10px 0 10px;
   border-radius: 27px;
@@ -205,11 +200,35 @@ nav .nav-item {
 
 /* --------------------------- FEATHERLIGHT MODALS ----------------------------- */
 .modal-image {
+  border-radius: 7px;
   width: 100%;
 }
 
 .hide-modal {
   display: none;
+  padding: 10px 20px 5px 20px;
+}
+
+.hide-modal .btn {
+  border: none;
+  width: 35%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.hide-modal .btn-primary {
+  background-color: #3E6786;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.hide-modal .btn-secondary {
+  background-color: #D76556;
+}
+
+.hide-modal a {
+  text-decoration: none;
+  color: white;
 }
 
 .featherlight-content {
@@ -217,8 +236,8 @@ nav .nav-item {
 }
 
 .featherlight .featherlight-close-icon {
-  top: 5px;
-  right: 5px;
+  top: 10px;
+  right: 10px;
   font-weight: bolder;
 }
 

@@ -147,7 +147,7 @@ nav {
         }
 
         &:hover {
-            filter: drop-shadow($carousel-shadow-hover);
+            // filter: drop-shadow($carousel-shadow-hover);
         }
     }
 
@@ -226,11 +226,34 @@ nav {
 /* --------------------------- FEATHERLIGHT MODALS ----------------------------- */
 
 .modal-image {
+    border-radius: 7px;
     width: 100%;
 }
 
 .hide-modal {
     display: none;
+    padding: 10px 20px 5px 20px;
+
+    .btn {
+        border: none; 
+        width: 35%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .btn-primary {
+        background-color: $dark-blue;
+        transition: all .3s;
+    }
+
+    .btn-secondary {
+        background-color: $red;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
 }
 
 .featherlight-content {
@@ -238,8 +261,8 @@ nav {
 }
 
 .featherlight .featherlight-close-icon {
-    top: 5px;
-    right: 5px;
+    top: 10px;
+    right: 10px;
     font-weight: bolder;
 }
 
