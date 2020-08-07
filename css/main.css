@@ -22,7 +22,20 @@ html {
   color: #2D394E;
 }
 
+.background-dark-blue {
+  background-color: #3E6786;
+}
+
+.background-light-blue {
+  background-color: #EAEEF2;
+}
+
 /* --------------------------- NAVBAR ----------------------------- */
+nav #logo:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
 nav h2 {
   padding-left: 10px;
   color: #D76556;
@@ -31,16 +44,44 @@ nav h2 {
 
 nav a {
   color: white;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 nav a:hover {
   color: #D76556;
+  text-decoration: none;
 }
 
 nav .nav-item {
   padding: 0px 15px 0px 15px;
+}
+
+nav .nav-link {
+  position: relative;
+}
+
+nav .nav-link:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  max-width: 100px;
+  height: 2px;
+  bottom: 6px;
+  left: 0;
+  background-color: #D76556;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  opacity: 0;
+}
+
+nav .nav-link:hover:before {
+  opacity: 1;
+  left: 0;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 /* --------------------------- HOME ----------------------------- */
@@ -130,7 +171,7 @@ nav .nav-item {
 
 #projects .carousel-item {
   padding: 0 10px 0 10px;
-  border-radius: 27px;
+  border-radius: 50px;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -173,7 +214,8 @@ nav .nav-item {
   color: #D76556;
 }
 
-#projects .slick-next:before, #projects .slick-prev:before {
+#projects .slick-next:before,
+#projects .slick-prev:before {
   font-size: 40px;
   color: #D76556;
 }
@@ -198,13 +240,12 @@ nav .nav-item {
 
 /* --------------------------- FEATHERLIGHT MODALS ----------------------------- */
 .modal-image {
-  border-radius: 7px;
   width: 100%;
 }
 
 .hide-modal {
   display: none;
-  padding: 10px 20px 5px 20px;
+  padding: 5px 10px 0px 10px;
 }
 
 .hide-modal h5 {
@@ -241,6 +282,8 @@ nav .nav-item {
   top: 10px;
   right: 10px;
   font-weight: bolder;
+  color: red;
+  font-size: xx-large;
 }
 
 /* --------------------------- RESUME ----------------------------- */
@@ -299,16 +342,26 @@ nav .nav-item {
 
 #contact a {
   color: white;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 #contact a:hover {
   text-decoration: none;
+  color: #D76556;
+}
+
+#contact a:hover .icon {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 #contact .icon {
   width: 35px;
   height: 35px;
   margin-right: 20px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 #contact .contact-item {

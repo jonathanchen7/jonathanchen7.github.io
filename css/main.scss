@@ -46,9 +46,21 @@ html {
     }
 }
 
+.background-dark-blue {
+    background-color: $dark-blue;
+}
+
+.background-light-blue {
+    background-color: $light-blue;
+}
+
 /* --------------------------- NAVBAR ----------------------------- */
 
 nav {
+    #logo:hover {
+        transform: rotate(360deg);
+    }
+
     h2 {
         padding-left: 10px;
         color: $red;
@@ -57,22 +69,47 @@ nav {
 
     a {
         color: white;
-        transition: .3s;
+        transition: .5s;
 
         &:hover {
             color: $red;
+            text-decoration: none;
         }
     }
 
     .nav-item {
         padding: 0px 15px 0px 15px;
     }
+
+    .nav-link {
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            max-width: 100px;
+            height: 2px;
+            bottom: 6px;
+            left: 0;
+            background-color: $red;
+            transform: scaleX(0);
+            transition: all .3s ease-in-out;
+            opacity: 0;
+        }
+
+        &:hover:before {
+            opacity: 1;
+            left: 0;
+            transform: scaleX(1);
+        }
+    }
 }
 
 /* --------------------------- HOME ----------------------------- */
 
 #home-background {
-    background:url('/images/background.png');
+    background: url('/images/background.png');
 }
 
 #home-page {
@@ -129,22 +166,24 @@ nav {
         padding: 20px 0 20px 0;
         transition: .3s;
 
-        &:hover .carousel-item {
-            filter: brightness($carousel-brightness) blur($carousel-blur);
-        }
+        &:hover {
+            .carousel-item {
+                filter: brightness($carousel-brightness) blur($carousel-blur);
+            }
 
-        &:hover .carousel-header {
-            display: inline;
-        }
+            .carousel-header {
+                display: inline;
+            }
 
-        &:hover .carousel-subheader {
-            display: inline;
+            .carousel-subheader {
+                display: inline;
+            }
         }
     }
 
     .carousel-item {
         padding: 0 10px 0 10px;
-        border-radius: 27px;
+        border-radius: 50px;
         height: 100%;
         object-fit: cover;
         transition: .5s;
@@ -172,7 +211,7 @@ nav {
         transition: .5s;
     }
 
-/* --------------------------- SLICK CAROUSEL ----------------------------- */
+    /* --------------------------- SLICK CAROUSEL ----------------------------- */
 
     .slick-dots li {
         button {
@@ -187,23 +226,26 @@ nav {
         }
     }
 
-    .slick-next, .slick-prev {
+    .slick-next,
+    .slick-prev {
         &:before {
             font-size: 40px;
-            color: $red;
+            color: $red
         }
     }
 
     .slick-prev {
         left: -90px;
-    [dir="rtl"] & {
-        left: auto;
-        right: -90px;
-    }
+
+        [dir="rtl"] & {
+            left: auto;
+            right: -90px;
+        }
     }
 
     .slick-next {
         right: -70px;
+
         [dir="rtl"] & {
             left: -70px;
             right: auto;
@@ -215,20 +257,19 @@ nav {
 /* --------------------------- FEATHERLIGHT MODALS ----------------------------- */
 
 .modal-image {
-    border-radius: 7px;
     width: 100%;
 }
 
 .hide-modal {
     display: none;
-    padding: 10px 20px 5px 20px;
+    padding: 5px 10px 0px 10px;
 
     h5 {
         color: $red;
     }
 
     .btn {
-        border: none; 
+        border: none;
         width: 35%;
         margin-left: 10px;
         margin-right: 10px;
@@ -257,6 +298,8 @@ nav {
     top: 10px;
     right: 10px;
     font-weight: bolder;
+    color: red;
+    font-size: xx-large;
 }
 
 /* --------------------------- RESUME ----------------------------- */
@@ -304,16 +347,24 @@ nav {
 
     a {
         color: white;
-    
+
         &:hover {
             text-decoration: none;
+            color: $red;
+
+            .icon {
+                transform: scale(1.2);
+            }
         }
+
+        transition: all .3s;
     }
 
     .icon {
         width: 35px;
         height: 35px;
         margin-right: 20px;
+        transition: all .5s;
     }
 
     .contact-item {
@@ -321,4 +372,3 @@ nav {
     }
 
 }
-
