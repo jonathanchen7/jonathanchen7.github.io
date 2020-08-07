@@ -32,6 +32,7 @@ $(document).ready(function () {
     infinite: true,
     slidesToShow: 3,
     centerMode: true,
+    swipe: false,
     focusOnSelect: true,
     dots: true,
     initialSlide: 1,
@@ -40,6 +41,7 @@ $(document).ready(function () {
         breakpoint: 1100,
         settings: {
           arrows: false,
+          swipe: true,
           centerMode: false,
           centerPadding: '40px',
           slidesToShow: 2
@@ -49,6 +51,7 @@ $(document).ready(function () {
         breakpoint: 900,
         settings: {
           arrows: false,
+          swipe: true,
           centerPadding: '40px',
           slidesToShow: 1
         }
