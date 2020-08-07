@@ -18,8 +18,8 @@ html {
   color: white;
 }
 
-.color-black a {
-  color: black;
+.color-blue a {
+  color: #2D394E;
 }
 
 /* --------------------------- NAVBAR ----------------------------- */
@@ -100,7 +100,7 @@ nav .nav-item {
 }
 
 #projects h1 {
-  color: black;
+  color: #2D394E;
 }
 
 #projects .carousel {
@@ -111,21 +111,21 @@ nav .nav-item {
 #projects .carousel-box {
   position: relative;
   padding: 20px 0 20px 0;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 #projects .carousel-box:hover .carousel-item {
-  -webkit-filter: blur(0px) brightness(100%);
-          filter: blur(0px) brightness(100%);
+  -webkit-filter: brightness(60%) blur(1.5px);
+          filter: brightness(60%) blur(1.5px);
 }
 
 #projects .carousel-box:hover .carousel-header {
-  background-color: #81A5C5;
+  display: inline;
 }
 
 #projects .carousel-box:hover .carousel-subheader {
-  background-color: #D76556;
+  display: inline;
 }
 
 #projects .carousel-item {
@@ -136,8 +136,6 @@ nav .nav-item {
      object-fit: cover;
   -webkit-transition: .5s;
   transition: .5s;
-  -webkit-filter: blur(1.5px) brightness(80%);
-          filter: blur(1.5px) brightness(80%);
 }
 
 #projects .carousel-text-box {
@@ -149,19 +147,19 @@ nav .nav-item {
 }
 
 #projects .carousel-header {
-  -webkit-box-decoration-break: clone;
-          box-decoration-break: clone;
-  padding: 2px 8px 2px 8px;
-  border-radius: 25px;
+  display: none;
+  padding-left: 10px;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
   -webkit-transition: .5s;
   transition: .5s;
 }
 
 #projects .carousel-subheader {
-  -webkit-box-decoration-break: clone;
-          box-decoration-break: clone;
-  padding: 3px 10px 3px 10px;
-  border-radius: 20px;
+  display: none;
+  padding-left: 10px;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
   -webkit-transition: .5s;
   transition: .5s;
 }
@@ -207,6 +205,10 @@ nav .nav-item {
 .hide-modal {
   display: none;
   padding: 10px 20px 5px 20px;
+}
+
+.hide-modal h5 {
+  color: #D76556;
 }
 
 .hide-modal .btn {

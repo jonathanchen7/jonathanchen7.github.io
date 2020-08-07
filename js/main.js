@@ -5,10 +5,10 @@ $(document).ready(function () {
         var scroll = $(window).scrollTop() + 30;
 
         if (scroll > light_pos && scroll < (light_pos + light_height)) {
-            $('nav').addClass('color-black');
+            $('nav').addClass('color-blue');
             $('nav').removeClass('color-white');
         } else {
-            $('nav').removeClass('color-black');
+            $('nav').removeClass('color-blue');
             $('nav').addClass('color-white');
         }
 

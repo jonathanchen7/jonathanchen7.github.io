@@ -7,13 +7,9 @@ $blue: #81A5C5;
 $light-blue: #EAEEF2;
 $white: #FFFFFF;
 
-$carousel-brightness: 80%;
+$carousel-brightness: 60%;
 $carousel-blur: 1.5px;
 $carousel-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
-
-$carousel-brightness-hover: 100%;
-$carousel-blur-hover: 0px;
-$carousel-shadow-hover: 5px 7px 3px rgba(0, 0, 0, .3);
 
 /* --------------------------- MIXIMS ----------------------------- */
 
@@ -44,9 +40,9 @@ html {
     }
 }
 
-.color-black {
+.color-blue {
     a {
-        color: black;
+        color: $background-blue;
     }
 }
 
@@ -120,7 +116,7 @@ nav {
     @include section($light-blue);
 
     h1 {
-        color: black;
+        color: $background-blue;
     }
 
     .carousel {
@@ -131,34 +127,27 @@ nav {
     .carousel-box {
         position: relative;
         padding: 20px 0 20px 0;
-        transition: .5s;
+        transition: .3s;
 
         &:hover .carousel-item {
-            filter: blur($carousel-blur-hover) brightness($carousel-brightness-hover);
+            filter: brightness($carousel-brightness) blur($carousel-blur);
         }
 
         &:hover .carousel-header {
-
-            background-color: $blue;
+            display: inline;
         }
 
         &:hover .carousel-subheader {
-            background-color: $red;
-        }
-
-        &:hover {
-            // filter: drop-shadow($carousel-shadow-hover);
+            display: inline;
         }
     }
 
     .carousel-item {
-        
         padding: 0 10px 0 10px;
         border-radius: 27px;
         height: 100%;
         object-fit: cover;
         transition: .5s;
-        filter: blur($carousel-blur) brightness($carousel-brightness);
     }
 
     .carousel-text-box {
@@ -170,16 +159,16 @@ nav {
     }
 
     .carousel-header {
-        box-decoration-break: clone;
-        padding: 2px 8px 2px 8px;
-        border-radius: 25px;
+        display: none;
+        padding-left: 10px;
+        transition-delay: 1s;
         transition: .5s;
     }
 
     .carousel-subheader {
-        box-decoration-break: clone;
-        padding: 3px 10px 3px 10px;
-        border-radius: 20px;
+        display: none;
+        padding-left: 10px;
+        transition-delay: 1s;
         transition: .5s;
     }
 
@@ -233,6 +222,10 @@ nav {
 .hide-modal {
     display: none;
     padding: 10px 20px 5px 20px;
+
+    h5 {
+        color: $red;
+    }
 
     .btn {
         border: none; 
